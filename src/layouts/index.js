@@ -10,6 +10,8 @@ import styles from './layouts.module.css'
 
 import menuIcon from './menu_icon.png'
 
+import Sidebar from '../components/Sidebar'
+
 
 
 import './index.css'
@@ -81,6 +83,7 @@ const TemplateWrapper = ({ children }) => (
     >
       <div style={{flex:'1', height:'80%'}}>
         <Nav/>
+        {/* <Sidebar/> */}
       </div>
       <div  style={{flex:'3', height: '80%' }}>
         {children()}

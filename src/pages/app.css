@@ -6,9 +6,11 @@ html, body {
 .section {
   text-align: center;
   padding-bottom: 4rem;
-  height: 100%;
+  height: 100vh;
   overflow: none;
   padding-right: 8rem;
+
+
 }
 
 .section-homepage {
