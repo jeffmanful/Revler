@@ -1,0 +1,17 @@
+.sectionTitle {
+  color: gold;
+  text-align: center;
+}
+
+.sectionArrows {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.revealed {
+  color: white;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}

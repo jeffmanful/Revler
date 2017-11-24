@@ -1,0 +1,32 @@
+.focusGallery {
+  display: flex;
+  flex-direction: row;
+  transition: all 2.4s ease-in-out;
+}
+
+.focusGallery img {
+  width: 60%;
+  transition: all .4s ease-in-out;
+
+}
+
+.imageBody {
+  font-family: 'SF UI Text Light';
+  transition: all .4s ease-in-out;
+}
+
+.carouselControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin : 0 auto;
+  transition: all .4s ease-in-out;
+
+}
+
+.image {
+  width: 160px;
+  height: 250px;
+  transition: all .4s ease-in-out;
+}

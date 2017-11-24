@@ -1,0 +1,133 @@
+html, body {
+  min-height: 100%;
+  position: relative;
+}
+
+.section {
+  text-align: center;
+  padding-bottom: 4rem;
+  height: 100%;
+  overflow: none;
+  padding-right: 8rem;
+}
+
+.section-homepage {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+
+  padding-top: 5rem;
+  /*grid-template-columns: 90% auto;
+  grid-template-rows: 100%;*/
+
+}
+
+
+.section-side-image {
+  position: absolute;
+  transform : scale(0.8);
+
+  top: 60px;
+  right: -120px;
+}
+
+.section-body {
+  text-align: center;
+  padding-right : 2rem;
+}
+
+.tagline {
+  width: 100%;
+  font-size: 14px;
+}
+
+.tagline h3 {
+  color: gold;
+
+}
+
+.introduction {
+  padding-bottom: 3rem;
+}
+
+
+
+.submit-email {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  border-bottom: 1px solid grey;
+  width: 40%;
+  margin : 0 auto;
+  color : white;
+}
+
+.submit-email-label {
+  margin-left: -12rem;
+  padding-right: 0.5rem;
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.submit-email-arrow {
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+
+.submit-email-icon {
+  width: 22px;
+  height: 18px;
+
+  margin-top: 3rem;
+  position: absolute;
+
+}
+
+.submit-email-form {
+  width: 460px;
+  background-color: transparent;
+  border: none;
+  padding-left: 2rem;
+  color: white;
+}
+
+.section-logo {
+  transform: scale(0.5)
+}
+
+.let-me-know-button {
+  background-color: transparent;
+  height: auto;
+  border: none;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  width: 40%;
+}
+
+.store-buttons {
+  border-top: 1px solid grey;
+  padding-top: 1rem;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+
+.introduction {
+  width: 100%;
+}
+
+.introduction-text {
+  font-size: 20px;
+  padding-bottom: 2rem;
+  width: 50%;
+
+  margin: 0 auto;
+  color: white;
+
+}
+
+.main {
+    overflow: scroll;
+}
