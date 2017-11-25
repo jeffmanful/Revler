@@ -3,6 +3,7 @@
   position: fixed;
   font-family: 'SF UI Text Light';
   font-size: 8px;
+  display: none;
 
 }
 .navbarList a {
@@ -25,11 +26,14 @@
 .navbarList > li {
   text-decoration: none;
   position: relative;
+  list-style: none;
+  padding-bottom: 2rem;
 }
 
 .navbarList > li:before {
   /*content: '\25CF';*/
   margin-right: 10px;
+
   font-size: 20px;
 }
 
@@ -38,7 +42,7 @@
   left: 0;
   top: 0;
   content: '';
-  border-left: 3px solid white;
+  border-left: 1px solid white;
   margin-left: 5px;
   height: 100%;
 }
@@ -89,4 +93,110 @@ li:hover {
 .menuIcon {
   transform: scale(0.8);
   padding-top: 1rem;
+}
+
+@media screen and (min-height: 768px) {
+  .navbar {
+    color: white;
+    position: fixed;
+    font-family: 'SF UI Text Light';
+    font-size: 8px;
+    display: block;
+    left: 0;
+
+  }
+  .navbarList a {
+    color: white;
+
+    font-size: 12px;
+
+  }
+
+  .navbarItem {
+    margin-inline-start: 1.5rem;
+  }
+
+
+
+  .navbarList  {
+
+  }
+
+  .navbarList > li {
+    text-decoration: none;
+    position: relative;
+    list-style: none;
+    padding-bottom: 2rem;
+  }
+
+  .navbarList > li:before {
+    /*content: '\25CF';*/
+    margin-right: 10px;
+
+    font-size: 20px;
+  }
+
+  .navbarList > li:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    border-left: 1px solid white;
+    margin-left: 5px;
+    height: 100%;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 1px;
+    margin-bottom: 1rem;
+  }
+
+  .navbarList > li:first-of-type:after {
+    top: 50%;
+  }
+
+  .navbarList > li:last-of-type:after {
+    top: -50%;
+  }
+
+  .current a {
+    color:  gold;
+    /*color: white;*/
+  }
+
+  .current{
+    color: gold;
+  }
+
+  .current a div {
+    background-color: gold;
+    border-color: gold;
+  }
+
+  li:active {
+    color:gold;
+  }
+
+  li:hover {
+    color: gold;
+  }
+
+  .scrolled {
+    color: white;
+  }
+
+  .menuIcon {
+    transform: scale(0.8);
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .navbar{
+    
+  }
 }

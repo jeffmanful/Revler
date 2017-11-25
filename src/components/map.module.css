@@ -10,13 +10,29 @@ margin: 0;
 padding: 0;
 }
 
-.mapContainer{
-  min-height: 100%;
-  width: 80%;
-  margin: 0 auto;
+
+
+.mapContainer {
+  display: none;
+
+}
+.map {
+
 }
 
-.mapTitle{
-text-align: center;
-padding-bottom: 3rem;
+@media screen and (min-width: 768px) {
+  .mapContainer{
+    min-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .mapTitle{
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+
+
 }

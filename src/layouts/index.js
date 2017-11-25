@@ -12,8 +12,6 @@ import menuIcon from './menu_icon.png'
 
 import Sidebar from '../components/Sidebar'
 
-
-
 import './index.css'
 import { convertReactPropstoHtmlAttributes } from 'react-helmet/lib/HelmetUtils';
 
@@ -85,7 +83,7 @@ const TemplateWrapper = ({ children }) => (
         <Nav/>
         {/* <Sidebar/> */}
       </div>
-      <div  style={{flex:'3', height: '80%' }}>
+      <div  style={{flex:'3', height: '80%', width:'100vw' }}>
         {children()}
       </div>
 

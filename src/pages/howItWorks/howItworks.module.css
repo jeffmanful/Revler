@@ -3,15 +3,44 @@
   text-align: center;
 }
 
+.sectionTitle h1 {
+  font-size: 16px;
+}
+
 .sectionArrows {
   display: flex;
   flex-direction: row;
-  
+
 }
 
 .revealed {
   color: white;
-  width: 70%;
+  font-size: 14px;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 425px) {
+  .sectionTitle {
+    color: gold;
+    text-align: center;
+  }
+
+  .sectionTitle h1 {
+
+  }
+
+  .sectionArrows {
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .revealed {
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+  }
 }

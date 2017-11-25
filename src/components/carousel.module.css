@@ -1,18 +1,21 @@
 .focusGallery {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   transition: all 2.4s ease-in-out;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
 }
 
 .focusGallery img {
-  width: 60%;
-  transition: all .4s ease-in-out;
+
+  transition: all 1s ease-in-out;
 
 }
 
 .imageBody {
   font-family: 'SF UI Text Light';
-  transition: all .4s ease-in-out;
+  font-size: 1rem;
+  transition: all 1s ease-in-out;
 }
 
 .carouselControls {
@@ -22,6 +25,8 @@
   width: 90%;
   margin : 0 auto;
   transition: all .4s ease-in-out;
+  display: none;
+
 
 }
 
@@ -29,4 +34,57 @@
   width: 160px;
   height: 250px;
   transition: all .4s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  /*.focusGallery {
+    display: flex;
+    flex-direction: column;
+    transition: all 2.4s ease-in-out;
+  }*/
+
+  .focusGallery img {
+
+    transition: all 1s ease-in-out;
+
+  }
+
+  .imageBody {
+    font-family: 'SF UI Text Light';
+    font-size: 1rem;
+    transition: all 1s ease-in-out;
+  }
+
+  /*.carouselControls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin : 0 auto;
+    transition: all .4s ease-in-out;
+
+
+
+  }*/
+
+  .image {
+    width: 160px;
+    height: 250px;
+    transition: all .4s ease-in-out;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .focusGallery {
+    /*display: flex;*/
+    flex-direction: row;
+    transition: all 2.4s ease-in-out;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+  }
+  .carouselControls {
+    display: block;
+    flex-direction: row;
+    width: 100%;
+  }
 }

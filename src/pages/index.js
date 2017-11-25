@@ -22,7 +22,7 @@ class IndexPage extends React.Component {
         <div className="section section-homepage" id="homepage">
           <div className="section-body">
             <section id="section-1"></section>
-            <img src={logo}></img>
+            <img src={logo} className="main-logo"></img>
             <div className="tagline"><h1>Time to make a meaningful match</h1></div>
             <div className="introduction">
               <p className="introduction-text">
@@ -35,12 +35,12 @@ class IndexPage extends React.Component {
             <p className="submit-email-label">
               YOUR EMAIL HERE
             </p>
-            {/* <img src={icon} className="submit-email-arrow" /> */}
-            <img src={email} className="submit-email-icon" />
-            <input type="text" name="submitEmail" placeholder="" className="submit-email-form"></input>
+            <img src={icon} className="submit-email-arrow" />
+
+            <input type="text" name="submitEmail" placeholder="email" className="submit-email-form"></input>
             </div>
             <section id="section-2"></section>
-            <button className="let-me-know-button"><img src={letMeKnowButton}  /></button>
+            <button className="let-me-know-button">Let me know</button>
             <div className="store-buttons">
                <h5 style={{color:'white'}}>Very soon on</h5>
               <img src={appIcon} />

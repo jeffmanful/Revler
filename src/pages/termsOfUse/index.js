@@ -24,7 +24,7 @@ class TermsOfUsePage extends React.Component{
         <div className="section" id="termsOfUsePage">
           <section id="section-7"></section>
           <img src={logo} className="section-logo" />
-          <h1>Terms of service and private policy </h1>
+          <h1 className={styles.title}>Terms of service and private policy </h1>
           <div className={styles.textBox} >
 
             <p>

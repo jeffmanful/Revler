@@ -116,6 +116,7 @@ class Map extends React.Component {
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `600px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
+              className={styles.map}
 
           />
       </div>
