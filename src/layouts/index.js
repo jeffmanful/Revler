@@ -83,7 +83,7 @@ const TemplateWrapper = ({ children }) => (
         <Nav/>
         {/* <Sidebar/> */}
       </div>
-      <div  style={{flex:'3', height: '80%', width:'100vw' }}>
+      <div  style={{flex:'3', height: '80%', width:'100%'  }}>
         {children()}
       </div>
 

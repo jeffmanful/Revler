@@ -26,13 +26,23 @@ padding: 0;
     width: 80%;
     margin: 0 auto;
     display: block;
+    /*padding-bottom: 5rem;*/
   }
 
   .mapTitle{
     text-align: center;
     padding-bottom: 3rem;
   }
+}
 
+@media screen and (min-width:1024px) {
+  .mapContainer {
+    padding-bottom: 8rem;
+  }
+}
 
-
+@media screen and (min-width:1444px) {
+  .mapContainer {
+    padding-bottom: 12rem;
+  }
 }

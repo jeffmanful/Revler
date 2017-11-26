@@ -83,8 +83,22 @@
     -webkit-box-direction: normal;
   }
   .carouselControls {
-    display: block;
+    display: flex;
     flex-direction: row;
     width: 100%;
+  }
+  .imageBody {
+    font-size: 0.8rem;
+  }
+  .image {
+    width: 200px;
+    height: 328px;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .image {
+    width: 240px;
+    height: 400px;
   }
 }

@@ -11,7 +11,7 @@ import styles from './contact.module.css'
 class ContactUsPage extends React.Component {
   render(){
     return (
-      <div className="section" id="contactPage" style={{  }}>
+      <div className="section" id="contactPage" >
         <img src={Logo} className="section-logo" />
         <h1 className={styles.title}>Contact Us</h1>
         <Map/>
