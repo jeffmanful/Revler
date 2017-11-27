@@ -8,18 +8,14 @@ import Logo from '../Logo.png'
 
 import styles from './contact.module.css'
 
-class ContactUsPage extends React.Component {
-  render(){
-    return (
+const ContactUsPage = () => (
       <div className="section" id="contactPage">
         <img src={Logo} className="section-logo" />
         <h1 className={styles.title}>Contact Us</h1>
         <Map/>
         <Form/>
       </div>
-    )
-  }
+)
 
-}
 
 export default ContactUsPage

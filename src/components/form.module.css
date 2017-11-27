@@ -3,7 +3,7 @@
   text-align: left;
   padding: 2rem;
 
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
 
   font-size: 12px;
@@ -21,7 +21,7 @@
   color: black;
   border: none;
   border-radius: 1rem;
-  height: 45px;
+  height: 35px;
 
 }
 
@@ -36,7 +36,7 @@
 
 .message {
   resize: none;
-  height: 180px;
+  height: 150px;
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 15px;
@@ -48,17 +48,24 @@
 
 @media screen and (min-width:768px) {
   .formContainer {
-    width: 75%;
+    width: 70%;
     border-radius: 1rem;
     position: relative;
     margin: 0 auto;
+    /*margin-top: -25rem;
+    margin-right: 2rem;*/
   }
+  .email {
+    width: 70%;
+    height: 28px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
     .formContainer {
-      margin-top: -34rem;
-      margin-left: 15rem;
+      /*margin-top: -34rem;
+      margin-left: 15rem;*/
       width: 500px;
       margin-bottom: 0px;
     }
@@ -78,8 +85,8 @@
 }
 @media screen and (min-width: 1444px) {
   .formContainer {
-    margin-top: -34rem;
-    margin-left: 70%;
+    /*margin-top: -34rem;
+    margin-left: 70%;*/
     width: 500px;
     margin-bottom: 0px;
   }

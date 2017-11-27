@@ -4,7 +4,7 @@
 }
 
 .sectionTitle h1 {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .sectionArrows {
@@ -19,16 +19,14 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  padding: 1rem;
 }
+
 
 @media screen and (min-width: 425px) {
   .sectionTitle {
     color: gold;
     text-align: center;
-  }
-
-  .sectionTitle h1 {
-
   }
 
   .sectionArrows {
@@ -46,8 +44,10 @@
 }
 
 @media screen and (min-width:1024px) {
+
   .sectionTitle h1 {
     font-size: 2rem;
+    margin-bottom: 0;
   }
   .revealed {
     font-size: 1rem;
@@ -58,5 +58,9 @@
 @media screen and (min-width:1444px) {
   .revealed {
     padding-bottom: 7rem;
+  }
+  .sectionTitle h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }

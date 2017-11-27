@@ -4,6 +4,8 @@
   transition: all 2.4s ease-in-out;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  height: 300px;
+  overflow: scroll;
 }
 
 .focusGallery img {
@@ -36,17 +38,22 @@
   transition: all .4s ease-in-out;
 }
 
+/*NEXUS 5 SIZE*/
+@media screen and (min-width: 424px) {
+  .focusGallery {
+    height: 400px;
+  }
+}
+
+
 @media screen and (min-width: 768px) {
-  /*.focusGallery {
-    display: flex;
-    flex-direction: column;
+  .focusGallery {
+    /*overflow: scroll;*/
     transition: all 2.4s ease-in-out;
-  }*/
 
+  }
   .focusGallery img {
-
     transition: all 1s ease-in-out;
-
   }
 
   .imageBody {
@@ -54,18 +61,6 @@
     font-size: 1rem;
     transition: all 1s ease-in-out;
   }
-
-  /*.carouselControls {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin : 0 auto;
-    transition: all .4s ease-in-out;
-
-
-
-  }*/
 
   .image {
     width: 160px;
@@ -75,6 +70,7 @@
 }
 
 @media screen and (min-width: 1023px) {
+
   .focusGallery {
     /*display: flex;*/
     flex-direction: row;
@@ -85,15 +81,17 @@
   .carouselControls {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 75%;
+    /*padding-top: 1rem;*/
+    /*padding-bottom: 1rem;*/
   }
   .imageBody {
     font-size: 0.8rem;
   }
   .image {
-    width: 200px;
-    height: 328px;
+    transform: scale(0.5)
   }
+
 }
 
 @media screen and (min-width: 1444px) {

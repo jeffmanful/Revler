@@ -5,6 +5,7 @@
 .textBox p {
   font-size: 12px;
   text-align: left;
+
   color: white;
   border-bottom: 1px solid gray;
   /*padding-right: 5rem;*/
@@ -13,10 +14,12 @@
 }
 
 .textBox {
-  width: 100%;
-  height: 300px;
+  width: 80%;
+  /*text-align: right;*/
+  height: 280px;
   overflow-y: scroll;
   padding-bottom: 1rem;
+  margin-left: 3rem;
 }
 
 
@@ -44,18 +47,16 @@
     text-align: left;
     color: white;
     border-bottom: 1px solid gray;
-    padding-right: 5rem;
+    /*padding-right: 6rem;*/
     padding: 1rem;
 
   }
-
   .textBox {
-    width: 80%;
+    width: 70%;
+    height: 360px;
+    margin-left: 6rem;
     margin: 0 auto;
   }
-
-
-
   .carouselControls {
     display: flex;
     flex-direction: row;
@@ -65,17 +66,25 @@
     /*padding: 1rem;*/
     /*width: 100%;*/
   }
-
   .carouselControls p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 }
 
+@media screen and (min-width:768px) {
+  .textBox {
+    height: 550px;
+  }
+  .carouselControls {
+    padding-top: 4rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .textBox {
     width: 100%;
-    height: 600px;
+    height: 400px;
   }
 
   .title {
