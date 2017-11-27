@@ -51,7 +51,7 @@ class TermsOfUsePage extends React.Component{
           <div className={styles.carouselControls}>
             <img src={left} onClick={this.prevImage} />
             <section id="section-9"></section>
-            <p>Step {currentPage} of 26 </p>
+            <p>{currentPage} of 26 </p>
             <img src={right} onClick={this.nextImage} />
           </div>
 

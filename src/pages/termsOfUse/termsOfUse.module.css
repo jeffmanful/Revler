@@ -3,7 +3,7 @@
 }
 
 .textBox p {
-  font-size: 12px;
+  font-size: 11px;
   text-align: left;
   color: white;
   border-bottom: 1px solid gray;
@@ -36,6 +36,7 @@
 .carouselControls p {
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 11px;
 }
 
 @media screen and (min-width: 425px) {
