@@ -3,7 +3,7 @@ import React from 'react'
 
 import Link from 'gatsby-link'
 import Scrollspy from 'react-scrollspy'
-import OverScroll from 'react-over-scroll'
+
 import { Screen, ScreenSlice } from 'react-screen';
 import styles from '../../node_modules/react-screen/dist/react-screen.css'
 

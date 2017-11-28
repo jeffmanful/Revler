@@ -18,7 +18,7 @@ import Sidebar from '../components/Sidebar'
 
 import './index.css'
 import { convertReactPropstoHtmlAttributes } from 'react-helmet/lib/HelmetUtils';
-import OverScroll from 'react-over-scroll'
+
 
 import Homepage from '../pages/homepage/index'
 import TermsOfUsePage from '../pages/termsOfUse/index'
