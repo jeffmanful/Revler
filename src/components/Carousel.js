@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+const Slider  = require('react-slick');
 
 import styles from './carousel.module.css'
 
@@ -11,6 +12,10 @@ import stepFive from '../pages/3_copy.png'
 
 import right from '../pages/howItWorks/arrow_right.png'
 import left from '../pages/howItWorks/arrowleft.png'
+
+
+import "../../node_modules/slick-carousel/slick/slick.css";
+import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 const style = {
   width : 50 + '%'
@@ -24,13 +29,14 @@ const focusStyle = {
 class Carousel extends React.Component {
   constructor(props){
     super(props);
-    this.nextImage = this.nextImage.bind(this)
-    this.prevImage = this.prevImage.bind(this)
+    this.nextImage = this.nextImage.bind(this);
+    this.prevImage = this.prevImage.bind(this);
 
     // I should store image date outside of state as it does not change
     this.state = {
       // store an array of images
       currentImage : 0,
+      currentIndex : 1,
       defaultWidth : '50%',
       focusWidth : '80%',
       images :  [
@@ -72,7 +78,7 @@ class Carousel extends React.Component {
         {
           src: stepFive,
           isSelected : false,
-          id : 4,
+          id : 5,
           width : '70%',
           body : 'You can have up to 3 anonymous chats at the same time',
           scale : 0.8
@@ -84,104 +90,111 @@ class Carousel extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({currentImage : 0})
+    this.setState({
+       //currentImage : 0,
 
-    this.focusImage()
+    })
+    console.log(this.state.currentIndex + 'is index')
+
+    // this.focusImage()
     //get thevalue from the state
 
   }
 
   // focus on the next image in the array
   nextImage(e){
+    // e.preventDefault();
     console.log('next image')
     let currentImage = this.state.currentImage
 
-    currentImage = currentImage + 1
-    // decremnt the value of currentImage
+    let images = this.state.images
 
-    // loop the value around if below range
-    if (currentImage > 4){
-      currentImage = 0
 
+
+    if (currentImage === images.length-1){
+      currentImage = -1
     }
+
+    ++currentImage
+
+    // increment the value of currentImage
+    // currentImage = currentImage + 1
+    // loop the value around if below range
+
     console.log(currentImage);
 
+
+    let ind = 0
+
+    for ( ind; ind < images.length; ind++){
+        images[ind].width = "60%"
+        images[ind].scale = 0.6
+      }
+
+    images[currentImage].width = "100%"
+    images[currentImage].scale = 1
+
+
     this.setState({
-      currentImage : currentImage
+      currentImage : currentImage,
+      images : images
     })
 
-    // focus on the currentImage
-    this.focusImage()
-
-    //this.currentImage--
+  
 
   }
 
   prevImage(e){
+    // e.preventDefault();
     console.log('previous image')
     // load the images
     let currentImage = this.state.currentImage
+    let index = this.state.currentIndex
+    let images = this.state.images
     // decremnt the value of currentImage
-    currentImage = currentImage - 1
-    // loop the value around if below range
-    if ( currentImage < 0 ) {
-        currentImage = 4
-    }
-    //console.log(currentImage);
 
-    // update currentImage state
-    this.setState({
-      currentImage : currentImage,
-    })
+
+
+    // loop the value around if below range
+    if ( currentImage < 1 ) {
+        currentImage = images.length
+    }
+
+
+      --currentImage
+
+
+
+
+      let ind = 0
+      for ( ind; ind < images.length; ind++){
+          images[ind].width = "70%"
+          images[ind].scale = 0.7
+        }
+
+      images[currentImage].width = "100%"
+      images[currentImage].scale = 1.1
+
+      // set the state causing a call to the render() method.
+      this.setState({
+        currentImage : currentImage,
+        images : images
+      })
+
+
     // focus on the currentImage
-    this.focusImage()
+
     //this.currentImage--
   }
 
-  // set the image isSelected to True
-  // change the width of the image
-  focusImage(){
-    console.log('focus image')
-
-    // get the imagess from the state
-    let images = this.state.images
-    // get the currentTarget from the state
-    let currentImage = this.state.currentImage
-
-
-
-    //images[currentImage].width = "100%"
-    // set the values of the other items in the array to false apart from
-    for (let i in images) {
-      images[i].isSelected = false
-      if (i == currentImage) { // if the index matches the current image
-        images[currentImage].isSelected = true
-      }
-    }
-
-    //if the images.isSelected = true then its width becomes 120% else its width is 100%
-    for (let i in images) {
-      if ( images[i].isSelected ) {
-        //images[i].width = "100%"
-        images[i].scale = 1
-      } else {
-        //images[i].width = "70%"
-        images[i].scale = 0.8
-      }
-    }
-
-    // update the state
-    this.setState({
-      images : images
-    });
-  }
   render() {
 
     let images = this.state.images
 
     let max = images.length
     let current = this.state.currentImage
-
+    // let index = images[current].id
+    let index = images[current].id
 
 
     //let width = style.width
@@ -190,27 +203,28 @@ class Carousel extends React.Component {
     console.log(this.state.currentImage )
 
     return (
+
       <div>
         <div className={styles.carousel}>
           <section id="section-6"></section>
           <div className={styles.focusGallery}>
             { images
                 .map(image => (
-                  <div style={{width : '100%', textAlign:'center' }}>
+                  <div key={image.id.toString()} style={{width : '100%', textAlign:'center' }}>
                     <img src={image.src}
                       style={{transform : 'scale'+'('+ image.scale+')' }}
-                      key={image.id}
                       className={styles.image}  />
                       <p className={styles.imageBody} style={{width: '70%', margin: '0 auto', color:'white',transform : 'scale'+'('+ image.scale+')'  }}>{image.body}</p>
                   </div>
                 )
               )}
+
             </div>
         </div>
         <div className={styles.carouselControls} style={{color:'white'}}>
-          <img src={left} onClick={this.prevImage} className={styles.left} />
-          <p className={styles.steps}>Step <span style={{color:'gold'}}>{current}</span> of ...{max}</p>
-          <img src={right} onClick={this.nextImage} className={styles.right} />
+          <img src={left} onClick={e => this.prevImage(e)} className={styles.left} />
+          <p className={styles.steps}>Step <span style={{color:'gold'}}>{index}</span> of ...{max}</p>
+          <img src={right} onClick={e => this.nextImage(e)} className={styles.right} />
         </div>
       </div>
   );

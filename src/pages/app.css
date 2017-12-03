@@ -3,8 +3,31 @@ html, body {
   position: relative;
 }
 
+
+button:active {
+
+
+}
+
 .react-screen {
-  background: #24272C;
+  /*background: #24272C;*/
+  /* IE10+ */
+background-image: -ms-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #24272C), color-stop(100, #323A44));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
+
+/* W3C Markup */
+background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 }
 
 .react-screen-progress {
@@ -12,10 +35,13 @@ html, body {
   display: none;
 }
 
+.react-screen-progress .item {
+  height: 120px;
+}
+
 
 .section {
   text-align: center;
-  padding-bottom: 4rem;
 }
 
 .main-logo{
@@ -27,9 +53,9 @@ html, body {
   position: relative;
   width: 100%;
   overflow-x: hidden;
-  padding-top: 2rem;
+
   display: flex;
-  overflow: hidden;
+
 
 }
 
@@ -45,6 +71,8 @@ html, body {
 .section-body {
   text-align: center;
   flex: 3;
+  margin-top: 2rem;
+  overflow: scroll;
   /*padding-right : 2rem;*/
 }
 
@@ -59,35 +87,37 @@ html, body {
 }
 
 .tagline h3 {
-  color: gold;
+  color: #FFD84E;
 
 }
 
 .introduction-text {
   padding-bottom: 2rem;
-  padding: 1rem;
+  /*padding: 1rem;*/
   width: 100%;
   margin: 0 auto;
   color: white;
   padding-bottom: 3rem;
   font-size: 12px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 
 .submit-email {
   display: flex;
   flex-direction: row;
-  /*height: auto;*/
+
   border-bottom: 1px solid grey;
   width: 80%;
-  /*padding-left: 0.5rem;*/
+
   margin : 0 auto;
   color : white;
-  /*padding-bottom: 1rem;*/
+
 }
 
 .submit-email-label {
-  margin-left: -12rem;
+  margin-left: -13rem;
   padding-right: 0.5rem;
   font-size: 14px;
   margin-top: 1rem;
@@ -102,6 +132,7 @@ html, body {
 }
 
 .submit-email-icon {
+  margin-bottom: 1px;
   width: 22px;
   height: 18px;
   /*margin-top: 3rem;*/
@@ -114,7 +145,7 @@ html, body {
   width: 100%;
   background-color: transparent;
   border: none;
-
+  padding-left: 1rem;
   color: white;
 
 }
@@ -124,9 +155,9 @@ html, body {
 }
 
 .let-me-know-button {
-  background-color: gold;
+  background-color: #FFD84E;
   height: 30px;
-  border-color: gold;
+  border-color: #FFD84E;
   border-radius: 1rem;
   font-size: 12px;
 
@@ -136,11 +167,10 @@ html, body {
 }
 
 .store-buttons {
-  border-top: 1px solid grey;
+  border-top: 1px solid whitesmoke;
   padding-top: 1rem;
   width: 80%;
   margin: 0 auto;
-
 }
 
 .main {
@@ -177,9 +207,8 @@ html, body {
   }
   .section {
     text-align: center;
-    padding-bottom: 4rem;
     /*height: 100vh;*/
-    overflow: none;
+    overflow: scroll;
     /*padding-right: 8rem;*/
 
   }
@@ -200,6 +229,8 @@ html, body {
     padding-right : 2rem;
     width: 60%;
     margin: 0 auto;
+    overflow: scroll;
+
   }
 
   .tagline {
@@ -213,7 +244,7 @@ html, body {
   }
 
   .introduction {
-    padding-bottom: 3rem;
+    padding-bottom: 1.5rem;
   }
 
 
@@ -224,6 +255,7 @@ html, body {
     border-bottom: 1px solid grey;
     width: 40%;
     margin : 0 auto;
+    align-items: center;
     color : white;
   }
 
@@ -240,11 +272,6 @@ html, body {
   }
 
   .submit-email-icon {
-    width: 22px;
-    height: 18px;
-
-    margin-top: 3rem;
-    position: absolute;
 
   }
 
@@ -252,7 +279,7 @@ html, body {
     width: 460px;
     background-color: transparent;
     border: none;
-    padding-left: 2rem;
+    padding-left: 3rem;
     color: white;
   }
 
@@ -310,6 +337,7 @@ html, body {
   /*homepage only*/
   .section-homepage {
     padding-left: 20%;
+    margin-top: 0rem;
   }
   /*side image on Homepage*/
   .section-side-image {
@@ -330,24 +358,28 @@ html, body {
   }
 
   .submit-email {
-    width: 70%;
+    width: 75%;
+    font-size: 14px;
   }
 
   .submit-email-form {
-    padding-left: 0;
-
+    /*padding-left: 0;*/
+    padding-left: 12px;
   }
 
   .let-me-know-button {
     margin-bottom: 3rem;
     margin-top: 1rem;
-    width: 280px;
-    height: 40px;
+    border-radius: 3rem;
+    width: 300px;
+    height: 50px;
+    font-size: 18px;
   }
-  .submit-email-icon {
-    display: block;
-    position: relative;
+  .main-logo {
+    transform: scale(0.7);
+    /*padding-bottom: 1rem;*/
   }
+
 }
 @media screen and (min-width: 1444px) {
   .section-side-image {

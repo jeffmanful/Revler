@@ -1,5 +1,5 @@
 .sectionTitle {
-  color: gold;
+  color: #FFD84E;
   text-align: center;
 }
 
@@ -19,13 +19,15 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  padding: 1rem;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 
 @media screen and (min-width: 425px) {
   .sectionTitle {
-    color: gold;
+
     text-align: center;
   }
 

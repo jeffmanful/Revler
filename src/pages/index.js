@@ -20,12 +20,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './app.css'
 
 
-
-//const pages =[{Homepage}, {HowItWorksPage}, {TermsOfUsePage}, {ContactUsPage}]
-
-
-
-
 class IndexPage extends React.Component {
   render(){
     return(
@@ -43,9 +37,7 @@ class IndexPage extends React.Component {
           <ScreenSlice>
             <ContactUsPage/>
           </ScreenSlice>
-   </Screen>
-
-
+        </Screen>
       </div>
     )
   }
