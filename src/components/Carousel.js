@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-const Slider  = require('react-slick');
 
 import styles from './carousel.module.css'
 
@@ -13,17 +12,6 @@ import stepFive from '../pages/3_copy.png'
 import right from '../pages/howItWorks/arrow_right.png'
 import left from '../pages/howItWorks/arrowleft.png'
 
-
-import "../../node_modules/slick-carousel/slick/slick.css";
-import "../../node_modules/slick-carousel/slick/slick-theme.css";
-
-const style = {
-  width : 50 + '%'
-}
-
-const focusStyle = {
-  width : 70 + '%'
-}
 
 
 class Carousel extends React.Component {
@@ -140,7 +128,7 @@ class Carousel extends React.Component {
       images : images
     })
 
-  
+
 
   }
 

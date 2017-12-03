@@ -1,20 +1,19 @@
 import React from 'react'
 
+import styles from './homepage.module.css'
 
 import display from '../Display_Style_05.png'
-
 import logo from './Logo.png'
 import logo293 from './Logo-293w.png'
 import logo568 from './Logo-586w.png'
 import logo879 from './Logo-879w.png'
-
 import icon from '../icon_arrow.png'
 import email from '../ic_email.png'
 import letMeKnowButton from '../Let_me_know_button.png'
 import appIcon from '../apps_icon.png'
 
 
-import styles from './homepage.module.css'
+
 
 
 const Homepage = () => (

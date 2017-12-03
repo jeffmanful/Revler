@@ -216,7 +216,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   .section-homepage {
     position: relative;
     width: 100%;
-    overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 5rem;
   }
 
@@ -229,7 +229,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     padding-right : 2rem;
     width: 60%;
     margin: 0 auto;
-    overflow: scroll;
+    overflow: hidden;
 
   }
 
