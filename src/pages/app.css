@@ -42,6 +42,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 .section {
   text-align: center;
+  overflow: scroll;
 }
 
 .main-logo{
@@ -156,9 +157,10 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 .let-me-know-button {
   background-color: #FFD84E;
-  height: 30px;
+  height: 40px;
   border-color: #FFD84E;
-  border-radius: 1rem;
+  border-radius: 2rem;
+  border-style: none;
   font-size: 12px;
 
   margin-top: 1rem;
@@ -207,17 +209,15 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   .section {
     text-align: center;
-    /*height: 100vh;*/
+    height: 100vh;
     overflow: scroll;
-    /*padding-right: 8rem;*/
-
+    overflow-x: hidden;
   }
 
   .section-homepage {
     position: relative;
     width: 100%;
-    overflow-y: hidden;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
 
   .section-side-image {
@@ -229,7 +229,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     padding-right : 2rem;
     width: 60%;
     margin: 0 auto;
-    overflow: hidden;
+    overflow: scroll;
 
   }
 
@@ -336,7 +336,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   /*homepage only*/
   .section-homepage {
-    padding-left: 20%;
+    padding-left: 25%;
     margin-top: 0rem;
   }
   /*side image on Homepage*/
@@ -376,8 +376,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     font-size: 18px;
   }
   .main-logo {
-    transform: scale(0.7);
-    /*padding-bottom: 1rem;*/
+    transform: scale(0.5);
   }
 
 }
@@ -405,7 +404,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
 
   .main-logo {
-    transform: scale(1.2);
+    transform: scale(0.7);
     padding-bottom: 1rem;
   }
 }

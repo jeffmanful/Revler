@@ -115,8 +115,8 @@ class Carousel extends React.Component {
     let ind = 0
 
     for ( ind; ind < images.length; ind++){
-        images[ind].width = "60%"
-        images[ind].scale = 0.6
+        images[ind].width = "70%"
+        images[ind].scale = 0.7
       }
 
     images[currentImage].width = "100%"
@@ -161,7 +161,7 @@ class Carousel extends React.Component {
         }
 
       images[currentImage].width = "100%"
-      images[currentImage].scale = 1.1
+      images[currentImage].scale = 1
 
       // set the state causing a call to the render() method.
       this.setState({

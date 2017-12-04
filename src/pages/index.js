@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
   render(){
     return(
       <div>
-        <Screen showSkip={false} sliceHeight={300}>
+        <Screen showSkip={false} sliceHeight={150}>
           <ScreenSlice>
             <Homepage/>
           </ScreenSlice>

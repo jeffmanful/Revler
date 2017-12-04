@@ -12,8 +12,9 @@ const ContactUsPage = () => (
       <div className="section" id="contactPage">
         <img src={Logo} className="section-logo" />
         <h1 className={styles.title}>Contact Us</h1>
-        <Map/>
         <Form/>
+        <Map/>
+
       </div>
 )
 

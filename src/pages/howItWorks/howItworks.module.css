@@ -26,15 +26,10 @@
 
 
 @media screen and (min-width: 425px) {
-  .sectionTitle {
-
-    text-align: center;
-  }
 
   .sectionArrows {
     display: flex;
     flex-direction: row;
-
   }
 
   .revealed {
@@ -49,20 +44,20 @@
 
   .sectionTitle h1 {
     font-size: 2rem;
-    margin-bottom: 0;
+
   }
   .revealed {
     font-size: 1rem;
-    padding-bottom: 6rem;
+    /*padding-bottom: 6rem;*/
   }
 }
 
 @media screen and (min-width:1444px) {
   .revealed {
-    padding-bottom: 7rem;
+    /*padding-bottom: 7rem;*/
   }
   .sectionTitle h1 {
     font-size: 2rem;
-    margin-bottom: 2rem;
+
   }
 }

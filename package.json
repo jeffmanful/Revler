@@ -15,6 +15,7 @@
     "react-dom": "^16.1.1",
     "react-google-maps": "^9.2.2",
     "react-over-scroll": "^1.1.1",
+    "react-responsive-carousel": "^3.1.30",
     "react-screen": "^0.1.6",
     "react-scrollchor": "^4.0.0",
     "react-scrollspy": "^3.3.4",

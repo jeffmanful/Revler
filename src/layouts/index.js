@@ -4,13 +4,9 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 //import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-
 import { Screen, ScreenSlice } from 'react-screen';
-
 import stylesLayout from './layouts.module.css'
-
 import menuIcon from './menu_icon.png'
-
 
 
 import './index.css'
