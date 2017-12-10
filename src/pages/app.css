@@ -5,9 +5,27 @@ html, body {
 
 
 button:active {
-
-
 }
+
+
+li:active, li:hover {
+  color: white!important;
+}
+
+.control-next .control-arrow::before {
+  border-left: 8px solid gold!important;
+  transform: scale(3.5);
+}
+
+.control-arrow::before {
+  /*border-left: 8px solid gold!important;*/
+  transform: scale(3.5) !important;
+  }
+
+.carousel .control-prev.control-arrow::before  {
+  border-right: 8px solid gold;
+}
+
 
 .react-screen {
   /*background: #24272C;*/
@@ -344,7 +362,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     display: block;
     /*position: ;*/
     transform : scale(1.5);
-    margin-top: 10rem;
+    margin-top: 40%;
   }
 
   .introduction-text {
@@ -381,12 +399,17 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 }
 @media screen and (min-width: 1444px) {
+  .section {
+    overflow: hidden;
+  }
+  .section-body {
+    overflow: hidden;
+  }
   .section-side-image {
     display: block;
     /*position: ;*/
-
-    transform : scale(1);
-
+    margin-top: 20%;
+    transform : scale(1.2);
   }
   .tagline h1 {
     font-size: 2.2rem;

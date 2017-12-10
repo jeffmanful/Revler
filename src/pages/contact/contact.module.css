@@ -1,6 +1,11 @@
 .title {
   font-size: 22px;
   color: #FFD84E;
+  margin-bottom: 5px;
+}
+
+img {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1024px) {
