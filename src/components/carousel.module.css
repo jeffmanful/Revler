@@ -47,6 +47,7 @@
   .focusGallery {
     /*overflow: scroll;*/
     transition: all 2.4s ease-in-out;
+    height: 600px;
 
   }
   .focusGallery img {
@@ -63,6 +64,13 @@
     width: 160px;
     height: 250px;
     transition: all .4s ease-in-out;
+  }
+  .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    margin: 0 75px;
+  }
+
+  .carousel .slider-wrapper{
+    width: 85%;
   }
 }
 

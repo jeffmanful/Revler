@@ -11,7 +11,7 @@ class Form extends React.Component  {
         <p>Comments, questions, complaints, suggestions, or maybe you're
           just saying hello? Leave us an email, and we'll get back to you!
         </p>
-        <form>
+        <form action="mailto:jeffrey.manful@gmail.com" method="post" enctype="text/plain">
           <input type="text" name="email" placeholder="Email" className={styles.email} />
           <textarea type="text" name="message" placeholder="Your message" className={styles.message}  /><br/>
           <input type="submit" value="Send" className={styles.button} />

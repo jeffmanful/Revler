@@ -223,6 +223,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   .react-screen-progress {
     left: 50px;
     display: block;
+    top: 45%;
 
   }
   .section {
@@ -359,10 +360,11 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   /*side image on Homepage*/
   .section-side-image {
-    display: block;
+    display: flex;
+    align-items: center;
     /*position: ;*/
-    transform : scale(1.5);
-    margin-top: 40%;
+    transform : scale(2);
+    /*margin-top: 40%;*/
   }
 
   .introduction-text {

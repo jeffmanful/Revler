@@ -34,13 +34,18 @@ const Homepage = () => (
               {/* <p className="submit-email-label">
                 YOUR EMAIL HERE
               </p> */}
-              <img src={icon} className="submit-email-arrow" />
+            
               <img src={email} className="submit-email-icon" />
 
+              <form action="mailto:jeffrey.manful@gmail.com" method="post" enctype="text/plain" style={{marginBottom:0}}>
+                <input type="text" name="submitEmail" placeholder="email" className="submit-email-form"></input>
+                <input type="submit"></input>
+              </form>
 
-              <input type="text" name="submitEmail" placeholder="email" className="submit-email-form"></input>
+
             </div>
             <button className="let-me-know-button">Let me know</button>
+
             <div className="store-buttons">
                <h5 style={{color:'white'}}>Very soon on</h5>
               <img src={appIcon} />
