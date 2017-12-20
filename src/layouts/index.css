@@ -49,6 +49,11 @@ body {
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'Slime Bold';
+  src: url('../fonts/Smile-Bold.otf') format('opentype');
+}
+
 a {
   text-decoration: none;
 }
@@ -59,7 +64,7 @@ html body {
 }
 
 h1 {
-  font-family: 'SF UI Text Heavy';
+  font-family: 'Slime Bold';
   color : gold;
 }
 
