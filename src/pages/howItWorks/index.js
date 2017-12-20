@@ -13,7 +13,9 @@ import logo from '../Logo.png'
 
 
 const HowItWorksPage = () => (
+
   <div className="section" id="howItWorksPage">
+
     <img src={logo} className="section-logo" />
     <section id="section-4"></section>
     <div className={styles.sectionTitle}>

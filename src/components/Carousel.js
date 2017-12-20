@@ -25,8 +25,7 @@ class Carousel extends React.Component {
       // store an array of images
       currentImage : 0,
       currentIndex : 1,
-      defaultWidth : '50%',
-      focusWidth : '80%',
+      imageIndex: 1,
       images :  [
         {
           src : stepOne,
@@ -42,7 +41,7 @@ class Carousel extends React.Component {
           id : 2,
           width : '70%',
           body : "The chat ends after 15mins and your profile is revealed",
-          scale : 0.8
+          scale : 1
 
         },
         {
@@ -51,7 +50,7 @@ class Carousel extends React.Component {
           id : 3,
           width : '70%',
           body: 'If you both swipe you match!',
-          scale : 0.8
+          scale : 1
 
         },
         {
@@ -60,7 +59,7 @@ class Carousel extends React.Component {
           id : 4,
           width : '70%',
           body : 'If you match you can continue the conversation where you left off',
-          scale : 0.8
+          scale : 1
 
         },
         {
@@ -69,7 +68,7 @@ class Carousel extends React.Component {
           id : 5,
           width : '70%',
           body : 'You can have up to 3 anonymous chats at the same time',
-          scale : 0.8
+          scale : 1
 
         }
       ]

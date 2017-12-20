@@ -60,6 +60,12 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 .section {
   text-align: center;
+  padding-bottom: 4rem;
+  /*height: 150vh;*/
+  /*overflow: hidden;*/
+  padding-right: 2rem;
+  /*overflow-x: hidden;*/
+
 
 }
 
@@ -151,9 +157,14 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   margin-bottom: 1px;
   width: 22px;
   height: 18px;
+
   /*margin-top: 3rem;*/
   /*position: absolute;*/
   display: block;
+
+  margin-top: 3rem;
+  /*position: relative;*/
+  /*display: block;*/
 
 }
 
@@ -161,9 +172,9 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   width: 100%;
   background-color: transparent;
   border: none;
+
   padding-left: 1rem;
   color: white;
-
 }
 
 .section-logo {
@@ -179,8 +190,10 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   font-size: 12px;
 
   margin-top: 1rem;
+
   width: 80%;
   margin-bottom: 1.5rem;
+
 }
 
 .store-buttons {
@@ -189,6 +202,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   width: 80%;
   margin: 0 auto;
 }
+
 
 
 @media screen and (min-width:425px) {
@@ -222,6 +236,11 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   .section {
     text-align: center;
     overflow-x: hidden;
+    padding-bottom: 4rem;
+    /*height: 100vh;*/
+    overflow: none;
+
+
   }
 
   .section-homepage {
