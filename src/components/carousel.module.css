@@ -4,8 +4,9 @@
   transition: all 2.4s ease-in-out;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  height: 360px;
+  height: 55vh;
   overflow: scroll;
+
 }
 
 .focusGallery img {
@@ -31,28 +32,26 @@
 .image {
   width: 160px;
   height: 250px;
-  /*transform: scale(0.6);*/
   transition: all .4s ease-in-out;
 }
+
+
 
 /*NEXUS 5 SIZE*/
 @media screen and (min-width: 424px) {
   .focusGallery {
     height: 400px;
+
   }
 }
 
 
 @media screen and (min-width: 768px) {
   .focusGallery {
-    /*overflow: scroll;*/
-    transition: all 2.4s ease-in-out;
-    height: 600px;
+    height: 50vh;
+  
+  }
 
-  }
-  .focusGallery img {
-    transition: all 1s ease-in-out;
-  }
 
   .imageBody {
     font-family: 'SF UI Text Light';
@@ -76,19 +75,19 @@
 
 @media screen and (min-width: 960px) {
   .focusGallery {
-    height: 350px;
+    /* height: 350px; */
   }
 }
 
 @media screen and (min-width: 1023px) {
 
   .focusGallery {
-    /*display: flex;*/
+
     flex-direction: row;
     transition: all 2.4s ease-in-out;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    overflow: scroll;
+
   }
   .carouselControls {
     display: flex;
@@ -100,9 +99,6 @@
   .imageBody {
     font-size: 0.8rem;
   }
-  .image {
-    /*transform: scale(0.3)*/
-  }
 
 }
 
@@ -112,6 +108,6 @@
     /*height: 380px;*/
   }
   .focusGallery {
-    /*height: 550px;*/
+
   }
 }

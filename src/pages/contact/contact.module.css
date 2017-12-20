@@ -6,11 +6,8 @@
 
 .contactContainer {
   width: 80%;
-  height: 70%;
+  height: 70vh;
   margin: 0 auto;
-  filter: grayscale(90%);
-  background-image: url("./map.png");
-  border-radius: 2rem;
 }
 
 img {
@@ -23,6 +20,10 @@ img {
   .contactContainer {
     display: flex;
     align-items: center;
+    background-image: url("./map.png");
+    background-position: center;
+    filter: grayscale(60%);
+    border-radius: 1rem;
   }
 }
 

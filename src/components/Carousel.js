@@ -211,7 +211,7 @@ class Carousel extends React.Component {
         </div>
         <div className={styles.carouselControls} style={{color:'white'}}>
           <img src={left} onClick={e => this.prevImage(e)} className={styles.left} />
-          <p className={styles.steps}>Step <span style={{color:'gold'}}>{index}</span> of ...{max}</p>
+          <p className={styles.steps}>Step <span style={{color:'gold'}}>{index}</span> of {max}</p>
           <img src={right} onClick={e => this.nextImage(e)} className={styles.right} />
         </div>
       </div>

@@ -60,11 +60,12 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 .section {
   text-align: center;
-  overflow: scroll;
+
 }
 
 .main-logo{
-  transform: scale(0.5);
+  padding-top: 1rem;
+  /*transform: scale(0.5);*/
 }
 
 
@@ -72,15 +73,12 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   position: relative;
   width: 100%;
   overflow-x: hidden;
-
   display: flex;
-
-
 }
 
 .section-side-image {
   /*position: absolute;*/
-  transform : scale(0.8);
+  /*transform : scale(0.8);*/
   display: none;
   flex: 1;
   /*top: 60px;*/
@@ -90,9 +88,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 .section-body {
   text-align: center;
   flex: 3;
-  margin-top: 2rem;
-  overflow: scroll;
-  /*padding-right : 2rem;*/
+  /*margin-top: 2rem;*/
 }
 
 .tagline {
@@ -126,9 +122,10 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 .submit-email {
   display: flex;
   flex-direction: row;
-
-  border-bottom: 1px solid grey;
-  width: 80%;
+  justify-content: center;
+  align-items: center;
+  /*border-bottom: 1px solid grey;*/
+  /* width: 80%;*/
 
   margin : 0 auto;
   color : white;
@@ -187,15 +184,12 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 }
 
 .store-buttons {
-  border-top: 1px solid whitesmoke;
-  padding-top: 1rem;
+  /*border-top: 1px solid whitesmoke;*/
+  padding-top: 6rem;
   width: 80%;
   margin: 0 auto;
 }
 
-.main {
-    overflow: scroll;
-}
 
 @media screen and (min-width:425px) {
   .react-screen-progress {
@@ -215,7 +209,6 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     margin-top: 3rem;
     margin-bottom: 4rem;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -228,8 +221,6 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   .section {
     text-align: center;
-    height: 100vh;
-    overflow: scroll;
     overflow-x: hidden;
   }
 
@@ -245,10 +236,10 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
   .section-body {
     text-align: center;
-    padding-right : 2rem;
+
     width: 60%;
     margin: 0 auto;
-    overflow: scroll;
+
 
   }
 
@@ -271,7 +262,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     display: flex;
     flex-direction: row;
     height: auto;
-    border-bottom: 1px solid grey;
+    /*border-bottom: 1px solid grey;*/
     width: 40%;
     margin : 0 auto;
     align-items: center;
@@ -309,10 +300,9 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 
   .store-buttons {
-    border-top: 1px solid grey;
-    padding-top: 1rem;
-    width: 80%;
-    margin: 0 auto;
+
+    padding-top: 7rem;
+
 
   }
 
@@ -343,9 +333,6 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     margin-bottom: 1.5rem;
   }
 
-  .main {
-      overflow: scroll;
-  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -355,7 +342,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   /*homepage only*/
   .section-homepage {
-    padding-left: 25%;
+
     margin-top: 0rem;
   }
   /*side image on Homepage*/
@@ -363,22 +350,22 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     display: flex;
     align-items: center;
     /*position: ;*/
-    transform : scale(2);
+    /*transform : scale(2);*/
     /*margin-top: 40%;*/
   }
 
   .introduction-text {
     font-size: 0.8rem;
-    width: 70%;
+    width: 55%;
     padding-bottom: 1rem;
   }
 
   .tagline h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .submit-email {
-    width: 75%;
+    width: 30%;
     font-size: 14px;
   }
 
@@ -396,16 +383,16 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     font-size: 18px;
   }
   .main-logo {
-    transform: scale(0.5);
+    /*transform: scale(0.5);*/
   }
 
 }
 @media screen and (min-width: 1444px) {
   .section {
-    overflow: hidden;
+
   }
   .section-body {
-    overflow: hidden;
+
   }
   .section-side-image {
     display: block;
@@ -421,15 +408,14 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   .store-buttons {
     border-top: none;
-
     padding-top: 4rem;
-    padding-bottom: 10rem;
+    /*padding-bottom: 10rem;*/
     width: 80%;
     margin: 0 auto;
   }
 
   .main-logo {
-    transform: scale(0.7);
+    /*transform: scale(0.7);*/
     padding-bottom: 1rem;
   }
 }
