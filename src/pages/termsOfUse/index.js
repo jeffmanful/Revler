@@ -17,7 +17,9 @@ class TermsOfUsePage extends React.Component {
         <div className="section" id="termsOfUsePage" >
           <img src={logo} className="section-logo" />
           <h1 className={styles.title}>Terms of service and private policy </h1>
-          <div style={{width:'100%', background:'transparent'}}><TextCarousel/></div>
+          <div style={{width:'100%', background:'transparent'}}>
+            <TextCarousel/>
+          </div>
 
         </div>
       )

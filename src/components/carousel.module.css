@@ -29,10 +29,15 @@
   display: none;
 }
 
+.carouselControls img {
+  margin-bottom: 0;
+}
+
 .image {
   width: 160px;
   height: 250px;
   transition: all .4s ease-in-out;
+  margin-bottom: 0px;
 }
 
 
@@ -49,7 +54,7 @@
 @media screen and (min-width: 768px) {
   .focusGallery {
     height: 50vh;
-  
+
   }
 
 
@@ -96,16 +101,21 @@
     /*padding-top: 1rem;*/
     /*padding-bottom: 1rem;*/
   }
+  .image {
+    width: 120px;
+    height: 210px;
+    transition: all .4s ease-in-out;
+  }
   .imageBody {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
 }
 
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1366px) {
   .image {
-    /*width: 220px;*/
-    /*height: 380px;*/
+    width: 220px;
+    height: 380px;
   }
   .focusGallery {
 

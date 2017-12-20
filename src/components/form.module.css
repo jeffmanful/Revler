@@ -48,12 +48,12 @@
 
 @media screen and (min-width:768px) {
   .formContainer {
-    width: 70%;
+    width: 60%;
     border-radius: 1rem;
     position: relative;
     margin: 0 auto;
-    /*margin-top: -25rem;
-    margin-right: 2rem;*/
+
+
   }
   .email {
     width: 70%;
@@ -64,11 +64,8 @@
 
 @media screen and (min-width: 1024px) {
     .formContainer {
-      /*margin-top: -34rem;
-      margin-left: 15rem;*/
       width: 440px;
       height: 330px;
-      margin-right: -2rem;
       margin-bottom: 0px;
     }
 

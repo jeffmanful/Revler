@@ -39,10 +39,11 @@ const Homepage = () => (
               </p> */}
 
               <img src={email} className="submit-email-icon" />
-
               <form action="mailto:jeffrey.manful@gmail.com" method="post" enctype="text/plain" className={styles.form} style={{marginBottom:0}}>
                 <input type="text" name="submitEmail" placeholder="E-mail" className={styles.submitEmailInput}></input>
+                <br/>
                 <input className={styles.submit} type="submit" value='Let me know' />
+
               </form>
 
 

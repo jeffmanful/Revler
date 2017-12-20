@@ -300,50 +300,29 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 
   .store-buttons {
-
-    padding-top: 7rem;
-
-
+    padding-top: 5rem;
   }
 
-
-  .introduction {
-    width: 100%;
-  }
 
   .introduction-text {
     padding-bottom: 2rem;
-    width: 50%;
     margin: 0 auto;
     color: white;
     font-size: 1rem;
-
   }
 
-  .let-me-know-button {
-    background-color: gold;
-    height: 30px;
-    border-color: gold;
-    border-radius: 1rem;
-    font-size: 12px;
-    /*padding-top: 2rem;*/
-    /*padding-bottom: 4rem;*/
-    margin-top: 1rem;
-    width: 250px;
-    margin-bottom: 1.5rem;
-  }
 
 }
 
 @media screen and (min-width: 1023px) {
   /*global padding rule*/
   .section {
-    padding-left: 5%;
+    /* padding-left: 5%; */
   }
   /*homepage only*/
   .section-homepage {
 
-    margin-top: 0rem;
+    margin-top: 4rem;
   }
   /*side image on Homepage*/
   .section-side-image {
@@ -387,13 +366,14 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
 
 }
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1366px) {
   .section {
-
+    padding-left: 0;
   }
-  .section-body {
-
+  .section-homepage {
+    margin-top: 8rem;
   }
+
   .section-side-image {
     display: block;
     /*position: ;*/

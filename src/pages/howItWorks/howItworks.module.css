@@ -10,7 +10,11 @@
 .sectionArrows {
   display: flex;
   flex-direction: row;
+}
 
+.logo {
+    margin-top: 1rem;
+    transform: scale(0.8);
 }
 
 .revealed {
@@ -23,6 +27,8 @@
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+
 
 
 @media screen and (min-width: 425px) {
@@ -44,10 +50,10 @@
 
   .sectionTitle h1 {
     font-size: 2rem;
-
+    margin-bottom: 0;
   }
   .revealed {
-    font-size: 1rem;
+    font-size: 0.9rem;
     /*padding-bottom: 6rem;*/
   }
 }

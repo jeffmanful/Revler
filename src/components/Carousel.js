@@ -202,7 +202,7 @@ class Carousel extends React.Component {
                     <img src={image.src}
                       style={{transform : 'scale'+'('+ image.scale+')' }}
                       className={styles.image}  />
-                      <p className={styles.imageBody} style={{width: '70%', margin: '0 auto', color:'white',transform : 'scale'+'('+ image.scale+')'  }}>{image.body}</p>
+                      <p className={styles.imageBody} style={{ margin: '0 auto', color:'white',transform : 'scale'+'('+ image.scale+')'  }}>{image.body}</p>
                   </div>
                 )
               )}
