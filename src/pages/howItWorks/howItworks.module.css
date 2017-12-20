@@ -1,5 +1,5 @@
 .sectionTitle {
-  color: gold;
+  color: #FFD84E;
   text-align: center;
 }
 
@@ -19,22 +19,17 @@
   width: 100%;
   text-align: center;
   margin: 0 auto;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
+
 @media screen and (min-width: 425px) {
-  .sectionTitle {
-    color: gold;
-    text-align: center;
-  }
-
-  .sectionTitle h1 {
-
-  }
 
   .sectionArrows {
     display: flex;
     flex-direction: row;
-
   }
 
   .revealed {
@@ -46,17 +41,23 @@
 }
 
 @media screen and (min-width:1024px) {
+
   .sectionTitle h1 {
     font-size: 2rem;
+
   }
   .revealed {
     font-size: 1rem;
-    padding-bottom: 6rem;
+    /*padding-bottom: 6rem;*/
   }
 }
 
 @media screen and (min-width:1444px) {
   .revealed {
-    padding-bottom: 7rem;
+    /*padding-bottom: 7rem;*/
+  }
+  .sectionTitle h1 {
+    font-size: 2rem;
+
   }
 }

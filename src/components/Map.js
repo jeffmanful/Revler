@@ -110,15 +110,15 @@ class Map extends React.Component {
   render() {
     return (
       <div className={styles.mapContainer}>
-          <MapWithAMarker
+          {/* <MapWithAMarker
               isMarkerShown
-              googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH234JVj8m2D725q1wRiEzodnSRoBnS_A&v=3.exp&libraries=geometry,drawing,places"
+              // googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH234JVj8m2D725q1wRiEzodnSRoBnS_A&v=3.exp&libraries=geometry,drawing,places"
               loadingElement={<div style={{ height: `100%` }} />}
               containerElement={<div style={{ height: `600px` }} />}
               mapElement={<div style={{ height: `100%` }} />}
               className={styles.map}
 
-          />
+          /> */}
       </div>
     )
   }
