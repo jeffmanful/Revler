@@ -8,6 +8,10 @@ import { Screen, ScreenSlice } from 'react-screen';
 import stylesLayout from './layouts.module.css'
 import menuIcon from './menu_icon.png'
 
+import { FullPage, Slide } from 'react-full-page';
+
+
+
 
 import './index.css'
 // import { convertReactPropstoHtmlAttributes } from 'react-helmet/lib/HelmetUtils';
@@ -18,7 +22,8 @@ import './index.css'
 
 
 const TemplateWrapper = ({ children }) => (
-  <div style={{backgroundColor:"#24272C", overflow:"hidden", minHeight:"100vh"}}>
+
+  <div>
     <Helmet
       title="Revler"
       meta={[
@@ -26,17 +31,12 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: '100%',
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
+
         {children()}
     </div>
-  </div>
+
+
+
 
 )
 

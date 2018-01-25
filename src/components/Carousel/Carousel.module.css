@@ -1,3 +1,8 @@
+.carousel {
+  /* padding-bottom: 2rem; */
+  overflow: scroll;
+}
+
 .focusGallery {
   display: flex;
   flex-direction: column;
@@ -5,7 +10,6 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   height: 55vh;
-  overflow: scroll;
 
 }
 
@@ -17,6 +21,8 @@
   font-family: 'SF UI Text Light';
   font-size: 1rem;
   transition: all 1s ease-in-out;
+  margin-top: -4rem;
+
 }
 
 .carouselControls {
@@ -34,19 +40,16 @@
 }
 
 .image {
-  width: 160px;
-  height: 250px;
   transition: all .4s ease-in-out;
   margin-bottom: 0px;
+  /* margin-bototm: -30px; */
 }
-
 
 
 /*NEXUS 5 SIZE*/
 @media screen and (min-width: 424px) {
   .focusGallery {
-    height: 400px;
-
+    /* height: 400px; */
   }
 }
 
@@ -54,21 +57,14 @@
 @media screen and (min-width: 768px) {
   .focusGallery {
     height: 50vh;
-
   }
-
 
   .imageBody {
     font-family: 'SF UI Text Light';
-    font-size: 1rem;
+    font-size: 0.8rem;
     transition: all 1s ease-in-out;
   }
 
-  .image {
-    width: 160px;
-    height: 250px;
-    transition: all .4s ease-in-out;
-  }
   .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
     margin: 0 75px;
   }
@@ -79,45 +75,46 @@
 }
 
 @media screen and (min-width: 960px) {
-  .focusGallery {
-    /* height: 350px; */
+  .imageBody {
+    height: 4rem;
+    margin-top: 0!important;
   }
+  .carousel {
+    overflow: visible;
+  }
+
 }
 
 @media screen and (min-width: 1023px) {
 
   .focusGallery {
-
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     transition: all 2.4s ease-in-out;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
+    overflow: visible;
+  }
 
+  .carouselBox {
+    width: 18%;
   }
   .carouselControls {
     display: flex;
     flex-direction: row;
     width: 75%;
-    /*padding-top: 1rem;*/
-    /*padding-bottom: 1rem;*/
   }
   .image {
-    width: 120px;
-    height: 210px;
+    filter: brightness(120%)!important;
+    max-width: 100%!important;
+    max-height: 100%!important;
     transition: all .4s ease-in-out;
-  }
-  .imageBody {
-    font-size: 1rem;
+
   }
 
 }
 
 @media screen and (min-width: 1366px) {
-  .image {
-    width: 220px;
-    height: 380px;
-  }
-  .focusGallery {
 
-  }
 }

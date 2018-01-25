@@ -1,6 +1,73 @@
 html, body {
   min-height: 100%;
   position: relative;
+  /*background: #24272C;*/
+  /* IE10+ */
+  background-image: -ms-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Opera */
+background-image: -o-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Webkit (Safari/Chrome 10) */
+/* background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #24272C), color-stop(100, #323A44))!important; */
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* W3C Markup */
+background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%)!important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+  outline: none!important;
+}
+
+.form-control:focus {
+  outline: none!important;
+  border-color: transparent!important;
+  box-shadow: none!important;
+}
+
+::-moz-scrollbars-vertical {
+  display: none;
+}
+
+body {
+  background-color: black!important;
+  background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%)!important;
+}
+
+.d-block {
+  transform: scale(0.7);
+  margin-top: -5rem;
+}
+
+.d-none {
+  display: block!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none h3 {
+  display: none;
+}
+
+.d-none p {
+  margin-bottom: 7.5rem;
+}
+
+.carousel-caption {
+  /* position: absolute;
+  top: 0; */
+  font-family: 'SF UI Text Light'
 }
 
 
@@ -26,27 +93,11 @@ li:active, li:hover {
   border-right: 8px solid gold;
 }
 
-
-.react-screen {
-  /*background: #24272C;*/
-  /* IE10+ */
-background-image: -ms-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
-
-/* Mozilla Firefox */
-background-image: -moz-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
-
-/* Opera */
-background-image: -o-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
-
-/* Webkit (Safari/Chrome 10) */
-background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #24272C), color-stop(100, #323A44));
-
-/* Webkit (Chrome 11+) */
-background-image: -webkit-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
-
-/* W3C Markup */
-background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
+.carousel .slide {
+  background: none!important;
 }
+
+
 
 .react-screen-progress {
   left: 32px;
@@ -61,11 +112,11 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 .section {
   text-align: center;
 
+  overflow: hidden;
 }
 
 .main-logo{
   padding-top: 1rem;
-  /*transform: scale(0.5);*/
 }
 
 
@@ -77,23 +128,19 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 }
 
 .section-side-image {
-  /*position: absolute;*/
-  /*transform : scale(0.8);*/
   display: none;
   flex: 1;
-  /*top: 60px;*/
-  /*right: -120px;*/
 }
 
 .section-body {
   text-align: center;
   flex: 3;
-  /*margin-top: 2rem;*/
 }
 
 .tagline {
-  width: 100%;
+  width: 80%;
   padding: 1rem;
+  margin: 0 auto;
   /*font-size: 12px;*/
 }
 
@@ -121,7 +168,8 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 .submit-email {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-direction: row; */
   justify-content: center;
   align-items: center;
   /*border-bottom: 1px solid grey;*/
@@ -148,22 +196,18 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 }
 
 .submit-email-icon {
-  margin-bottom: 1px;
+  margin-bottom: 0px;
   width: 22px;
   height: 18px;
-  /*margin-top: 3rem;*/
-  /*position: absolute;*/
-  display: block;
-
 }
 
 .submit-email-form {
   width: 100%;
   background-color: transparent;
   border: none;
+
   padding-left: 1rem;
   color: white;
-
 }
 
 .section-logo {
@@ -179,22 +223,29 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   font-size: 12px;
 
   margin-top: 1rem;
+
   width: 80%;
   margin-bottom: 1.5rem;
+
 }
 
 .store-buttons {
   /*border-top: 1px solid whitesmoke;*/
-  padding-top: 6rem;
+  padding-top: 2rem;
   width: 80%;
   margin: 0 auto;
 }
 
 
+
 @media screen and (min-width:425px) {
   .react-screen-progress {
     left: 50px;
-    display: none;
+    /* display: none; */
+  }
+  .d-block {
+    transform: scale(0.7);
+    margin-top: -7.5rem;
   }
 
   .tagline h1 {
@@ -222,12 +273,17 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   .section {
     text-align: center;
     overflow-x: hidden;
+
+    height: 100vh;
+    overflow: none;
+
+
   }
 
   .section-homepage {
     position: relative;
     width: 100%;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
   }
 
   .section-side-image {
@@ -239,7 +295,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
     width: 60%;
     margin: 0 auto;
-
+    padding: 2rem;
 
   }
 
@@ -259,8 +315,8 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 
   .submit-email {
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     height: auto;
     /*border-bottom: 1px solid grey;*/
     width: 40%;
@@ -281,9 +337,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     margin-top: 1rem;
   }
 
-  .submit-email-icon {
 
-  }
 
   .submit-email-form {
     width: 460px;
@@ -300,7 +354,7 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
 
 
   .store-buttons {
-    padding-top: 5rem;
+    padding-top: 3rem;
   }
 
 
@@ -309,33 +363,35 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     margin: 0 auto;
     color: white;
     font-size: 1rem;
+    font-family: 'SF UI Text Light'
   }
+
+  input[type="text"], input[type="email"], textarea, select, input {
+    outline: none!important;
+  }
+
+
 
 
 }
 
 @media screen and (min-width: 1023px) {
   /*global padding rule*/
-  .section {
-    /* padding-left: 5%; */
-  }
-  /*homepage only*/
-  .section-homepage {
 
-    margin-top: 4rem;
-  }
   /*side image on Homepage*/
   .section-side-image {
     display: flex;
     align-items: center;
-    /*position: ;*/
-    /*transform : scale(2);*/
-    /*margin-top: 40%;*/
+
+  }
+
+  .introduction {
+    padding-bottom: 3rem;
   }
 
   .introduction-text {
-    font-size: 0.8rem;
-    width: 55%;
+    font-size: 1rem;
+    width: 60%;
     padding-bottom: 1rem;
   }
 
@@ -361,22 +417,15 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
     height: 50px;
     font-size: 18px;
   }
-  .main-logo {
-    /*transform: scale(0.5);*/
-  }
 
 }
 @media screen and (min-width: 1366px) {
   .section {
     padding-left: 0;
   }
-  .section-homepage {
-    margin-top: 8rem;
-  }
 
   .section-side-image {
     display: block;
-    /*position: ;*/
     margin-top: 20%;
     transform : scale(1.2);
   }
@@ -388,14 +437,12 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%);
   }
   .store-buttons {
     border-top: none;
-    padding-top: 4rem;
-    /*padding-bottom: 10rem;*/
+    padding-top: 3rem;
     width: 80%;
     margin: 0 auto;
   }
 
   .main-logo {
-    /*transform: scale(0.7);*/
     padding-bottom: 1rem;
   }
 }

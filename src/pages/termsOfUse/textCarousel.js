@@ -9,7 +9,7 @@ class TextCarousel extends React.Component {
   render(){
     return(
 
-      <Carousel showThumbs={false} useKeyboardArrows={true} showIndicators={false}>
+      <Carousel showThumbs={false} useKeyboardArrows={true} showIndicators={false} className='carousel'>
         <div className="slide-box">
           <h4>Privacy Policy</h4>
           <p className="carousel-text">
@@ -484,7 +484,7 @@ National Domestic Violence Hotline
 Additionally, if you are aware of anyone who violates our terms of use please report them here.
           </p>
         </div>
-        
+
       </Carousel>
     )
   }

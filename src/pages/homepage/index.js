@@ -1,23 +1,49 @@
 import React from 'react'
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 import styles from './homepage.module.css'
 
-// import display from '../Display_Style_05.png'
-import display from './Display_Style_05.png'
-import displayLarger from './Display_Style_05@2x.png'
-import displayLargest from './Display_Style_05@3x.png'
 
+import display from './Display_Style_05.png'
 import logo from './Logo.png'
 import logo293 from './Logo-293w.png'
-import logo568 from './Logo-586w.png'
-import logo879 from './Logo-879w.png'
+
 import icon from '../icon_arrow.png'
 import email from '../ic_email.png'
 import letMeKnowButton from '../Let_me_know_button.png'
 import appIcon from '../apps_icon.png'
 
 
+class SubmitButton extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { width: 0};
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
 
+  componentDidMount() {
+  this.updateWindowDimensions();
+  window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth });
+  }
+
+  render() {
+    let width = this.state.width
+    const ButtonSwitch = () => {
+      if (width <= 768) {
+        return <a href='mailto:support@revleronline.com?subject=Subscribe&body=email' className={styles.mobileSubmit}><div className={styles.mobileButton}>Subscribe now!</div></a>
+      }
+      return <Button className={styles.submit}>Subscribe now!</Button>;
+    }
+    return (
+      <ButtonSwitch />
+    )
+
+  }
+}
 
 
 const Homepage = () => (
@@ -28,35 +54,28 @@ const Homepage = () => (
             <div className="tagline"><h1>Time to make a meaningful match</h1></div>
             <div className="introduction">
               <p className="introduction-text">
-              We haven’t launched yet, but we will let you know as soon as we
-              do just leave your email below and we’ll get back to you!
+                Coming soon!
+                We haven't launched yet, but sign up to be the first to get onboard. Simply leave your email below and we'll be in touch soon!
             </p>
             </div>
 
-            <div className="submit-email">
-              {/* <p className="submit-email-label">
-                YOUR EMAIL HERE
-              </p> */}
-
-              <img src={email} className="submit-email-icon" />
-              <form action="mailto:jeffrey.manful@gmail.com" method="post" enctype="text/plain" className={styles.form} style={{marginBottom:0}}>
-                <input type="text" name="submitEmail" placeholder="E-mail" className={styles.submitEmailInput}></input>
-                <br/>
-                <input className={styles.submit} type="submit" value='Let me know' />
-
-              </form>
-
-
+            <div className={styles.submitEmail}>
+              <img src={email} className={styles.submitEmailIcon} />
+              <Form action="mailto:support@revleronline.com?subject=Subscribe" method="post" enctype="text/plain" className={styles.form}>
+                <FormGroup >
+                  <Input type="email" name="email" id="exampleEmail" placeholder="E-mail" className={styles.submitEmailInput} />
+                  {/* <Button className={styles.submit}>Subscribe now!</Button> */}
+                  <SubmitButton />
+                </FormGroup>
+              </Form>
             </div>
-            {/* <button className="let-me-know-button">Let me know</button> */}
 
             <div className="store-buttons">
-               <h5 style={{color:'white'}}>Very soon on</h5>
+               <h5 style={{color:'white'}}>Coming very soon!</h5>
               <img src={appIcon} />
             </div>
           </div>
-
-            <img src={display} className={styles.sideImage}/>
+          <img src={display} className={styles.sideImage}/>
 
         </div>
     )

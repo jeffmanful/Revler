@@ -3,12 +3,67 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-
 }
 
 body {
   margin: 0;
 }
+
+/* html,
+body {
+  position: fixed;
+  overflow: hidden;
+} */
+
+
+#___gatsby {
+background-image: -ms-linear-gradient(bottom right, #24272C 0%, #323A44 100%);
+
+/* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Opera */
+background-image: -o-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #24272C), color-stop(100, #323A44))!important;
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* W3C Markup */
+background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%)!important;
+
+/* width: 100vw;
+ height: 100vh;
+ overflow-y: scroll;
+ -webkit-overflow-scrolling: touch; */
+}
+
+
+/* GLobal fullscreen selector  */
+.react-screen.in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: -ms-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Mozilla Firefox */
+  background-image: -moz-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Opera */
+background-image: -o-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #24272C), color-stop(100, #323A44))!important;
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(bottom right, #24272C 0%, #323A44 100%)!important;
+
+/* W3C Markup */
+background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%)!important;
+}
+
 @font-face {
     font-family: 'SF UI Text Light';
     src: url('../fonts/SFUIText-Light.eot');
@@ -50,6 +105,16 @@ body {
 }
 
 @font-face {
+    font-family: 'SF UI Display Regular';
+    src: url('../fonts/SFUIDisplay-Regular.eot');
+    src: url('../fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
   font-family: 'Slime Bold';
   src: url('../fonts/Smile-Bold.otf') format('opentype');
 }
@@ -59,7 +124,7 @@ a {
 }
 
 html body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-family: 'SF UI Text Regular'
 }
 
@@ -69,7 +134,7 @@ h1 {
 }
 
 #___gatsby {
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .circle {

@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
-//import Map from '../../components/Map'
+
 import Form from '../../components/Form'
 
 import Logo from '../Logo.png'
-import Map from './map.png'
 
 import styles from './contact.module.css'
 
