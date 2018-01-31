@@ -27,12 +27,17 @@ background-image: linear-gradient(to top left, #24272C 0%, #323A44 100%)!importa
 
 input {
   outline: none!important;
+  padding-bottom: 0;
 }
 
 .form-control:focus {
   outline: none!important;
   border-color: transparent!important;
   box-shadow: none!important;
+}
+
+.form-control {
+  padding: 0rem 0rem;
 }
 
 ::-moz-scrollbars-vertical {
@@ -65,8 +70,6 @@ body {
 }
 
 .carousel-caption {
-  /* position: absolute;
-  top: 0; */
   font-family: 'SF UI Text Light'
 }
 
@@ -85,7 +88,6 @@ li:active, li:hover {
 }
 
 .control-arrow::before {
-  /*border-left: 8px solid gold!important;*/
   transform: scale(3.5) !important;
   }
 
@@ -221,17 +223,13 @@ li:active, li:hover {
   border-radius: 2rem;
   border-style: none;
   font-size: 12px;
-
   margin-top: 1rem;
-
   width: 80%;
   margin-bottom: 1.5rem;
 
 }
 
 .store-buttons {
-  /*border-top: 1px solid whitesmoke;*/
-  padding-top: 2rem;
   width: 80%;
   margin: 0 auto;
 }
@@ -273,17 +271,13 @@ li:active, li:hover {
   .section {
     text-align: center;
     overflow-x: hidden;
-
     height: 100vh;
     overflow: none;
-
-
   }
 
   .section-homepage {
     position: relative;
     width: 100%;
-    /* padding-top: 2rem; */
   }
 
   .section-side-image {
@@ -292,11 +286,9 @@ li:active, li:hover {
 
   .section-body {
     text-align: center;
-
     width: 60%;
     margin: 0 auto;
-    padding: 2rem;
-
+    padding: 1rem;
   }
 
   .tagline {
@@ -306,7 +298,6 @@ li:active, li:hover {
 
   .tagline h3 {
     color: gold;
-
   }
 
   .introduction {
@@ -315,10 +306,7 @@ li:active, li:hover {
 
 
   .submit-email {
-    /* display: flex; */
-    /* flex-direction: row; */
     height: auto;
-    /*border-bottom: 1px solid grey;*/
     width: 40%;
     margin : 0 auto;
     align-items: center;
@@ -337,8 +325,6 @@ li:active, li:hover {
     margin-top: 1rem;
   }
 
-
-
   .submit-email-form {
     width: 460px;
     background-color: transparent;
@@ -352,14 +338,12 @@ li:active, li:hover {
   }
 
 
-
   .store-buttons {
-    padding-top: 3rem;
+    padding-top: 1.2rem;
   }
 
-
   .introduction-text {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin: 0 auto;
     color: white;
     font-size: 1rem;
@@ -369,10 +353,6 @@ li:active, li:hover {
   input[type="text"], input[type="email"], textarea, select, input {
     outline: none!important;
   }
-
-
-
-
 }
 
 @media screen and (min-width: 1023px) {
@@ -386,7 +366,7 @@ li:active, li:hover {
   }
 
   .introduction {
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
   .introduction-text {
@@ -405,7 +385,6 @@ li:active, li:hover {
   }
 
   .submit-email-form {
-    /*padding-left: 0;*/
     padding-left: 12px;
   }
 
@@ -437,7 +416,7 @@ li:active, li:hover {
   }
   .store-buttons {
     border-top: none;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     width: 80%;
     margin: 0 auto;
   }

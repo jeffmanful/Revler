@@ -46,7 +46,7 @@ class Form extends React.Component  {
           <p>Comments, questions, complaints, suggestions, or maybe you're
             just saying hello? Leave us an email, and we'll get back to you!
           </p>
-          <ReactForm action="mailto:support@revleronline.com" method="post" enctype="text/plain">
+          <ReactForm action="https://formspree.io/support@revleronline.com" method="POST" enctype="text/plain">
             <FormGroup>
               <Input type='email' name='email' placeholder='Email' className={styles.email} />
             </FormGroup>

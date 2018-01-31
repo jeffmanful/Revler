@@ -10,7 +10,6 @@ import logo293 from './Logo-293w.png'
 
 import icon from '../icon_arrow.png'
 import email from '../ic_email.png'
-import letMeKnowButton from '../Let_me_know_button.png'
 import appIcon from '../apps_icon.png'
 
 
@@ -61,10 +60,9 @@ const Homepage = () => (
 
             <div className={styles.submitEmail}>
               <img src={email} className={styles.submitEmailIcon} />
-              <Form action="mailto:support@revleronline.com?subject=Subscribe" method="post" enctype="text/plain" className={styles.form}>
+              <Form action="https://formspree.io/support@revleronline.com" method="post" enctype="text/plain" className={styles.form}>
                 <FormGroup >
                   <Input type="email" name="email" id="exampleEmail" placeholder="E-mail" className={styles.submitEmailInput} />
-                  {/* <Button className={styles.submit}>Subscribe now!</Button> */}
                   <SubmitButton />
                 </FormGroup>
               </Form>
